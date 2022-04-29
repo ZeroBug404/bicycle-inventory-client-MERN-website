@@ -1,0 +1,13 @@
+.ourMission-btn{
+    border: none;
+    border-radius: 2px;
+    background: #df453e;
+    padding: 25px 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+.ourMission-btn:hover{
+    background: #1b3e41;
+}

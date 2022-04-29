@@ -1,0 +1,17 @@
+.repair-section{
+    background-image: url("../../../images/repair-service.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.service-title{
+    font-size: 70px;
+    font-weight: bold;
+}
