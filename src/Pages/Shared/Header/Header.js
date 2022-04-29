@@ -5,7 +5,7 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
+    <Navbar style={{backgroundColor: 'rgb(21 39 41)'}} collapseOnSelect expand="lg" variant="dark">
       <Container>
         <Navbar.Brand className="header-logo" href="#home">
           <img src={logo} alt="" />

@@ -8,7 +8,7 @@ const Repair = () => {
       <div>
         <img width={"80%"} src={cycle} alt="" />
       </div>
-      <div className="text-white">
+      <div className="text-white p-4">
         <h1 className="mb-5 service-title">Bike service & repair</h1>
         <div className="service-options">
           <div>
