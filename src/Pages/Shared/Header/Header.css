@@ -1,0 +1,14 @@
+.header-logo{
+    width: 100px;
+}
+.header-logo img{
+    width: 80%;
+}
+.navbar-links a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-links a:hover{
+    color: #df453e
+}
