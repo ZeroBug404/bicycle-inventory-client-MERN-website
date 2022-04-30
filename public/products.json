@@ -1,110 +1,110 @@
 [
-    {
-      "price": "$2,183.93",
-      "image": "https://ibb.co/0KYKm0H",
-      "quantity": 21,
-      "name": "Ortega Preston",
-      "description": "male",
-      "company": "XANIDE",
-      "email": "ortegapreston@xanide.com"
-    },
-    {
-      "price": "$3,064.97",
-      "image": "https://ibb.co/NrXgZ5Z",
-      "quantity": 28,
-      "name": "Elvira Rivers",
-      "description": "female",
-      "company": "MATRIXITY",
-      "email": "elvirarivers@matrixity.com"
-    },
-    {
-      "price": "$2,913.80",
-      "image": "https://ibb.co/nkrD2XY",
-      "quantity": 26,
-      "name": "Sheppard Riley",
-      "description": "male",
-      "company": "DEMINIMUM",
-      "email": "sheppardriley@deminimum.com"
-    },
-    {
-      "price": "$1,159.16",
-      "image": "https://ibb.co/gRTwdzT",
-      "quantity": 20,
-      "name": "Smith Stewart",
-      "gender": "male",
-      "company": "MANUFACT",
-      "email": "smithstewart@manufact.com"
-    },
-    {
-      "price": "$3,800.15",
-      "image": "https://ibb.co/J7CV7Tr",
-      "quantity": 21,
-      "name": "Garner Schmidt",
-      "description": "male",
-      "company": "DRAGBOT",
-      "email": "garnerschmidt@dragbot.com"
-    },
-    {
-      "price": "$2,402.38",
-      "image": "https://ibb.co/JcqT3hg",
-      "quantity": 23,
-      "name": "Joy Alston",
-      "description": "female",
-      "company": "ISOLOGIX",
-      "email": "joyalston@isologix.com"
-    },
-    {
-      "price": "$3,564.25",
-      "image": "https://ibb.co/5KLzJXM",
-      "quantity": 31,
-      "name": "Oconnor Cline",
-      "description": "male",
-      "company": "VIRXO",
-      "email": "oconnorcline@virxo.com"
-    },
-    {
-      "price": "$3,926.99",
-      "image": "http://placehold.it/32x32",
-      "quantity": 34,
-      "name": "Newton Parsons",
-      "description": "male",
-      "company": "INSURON",
-      "email": "newtonparsons@insuron.com"
-    },
-    {
-      "price": "$3,277.04",
-      "image": "https://ibb.co/JcqT3hg",
-      "quantity": 32,
-      "name": "Brennan Clemons",
-      "description": "male",
-      "company": "FUELWORKS",
-      "email": "brennanclemons@fuelworks.com"
-    },
-    {
-      "price": "$2,943.52",
-      "image": "http://placehold.it/32x32",
-      "quantity": 37,
-      "name": "Franks Beck",
-      "description": "male",
-      "company": "PLEXIA",
-      "email": "franksbeck@plexia.com"
-    },
-    {
-      "price": "$1,448.85",
-      "image": "http://placehold.it/32x32",
-      "quantity": 32,
-      "name": "Eloise Duffy",
-      "description": "female",
-      "company": "SENMAO",
-      "email": "eloiseduffy@senmao.com"
-    },
-    {
-      "price": "$2,092.61",
-      "image": "http://placehold.it/32x32",
-      "quantity": 35,
-      "name": "Taylor Hinton",
-      "description": "male",
-      "company": "XYQAG",
-      "email": "taylorhinton@xyqag.com"
-    }
-  ]
+  {
+    "price": "$2,183.93",
+    "image": "https://i.ibb.co/f9r9q3j/image-copyright-32-500x350.png",
+    "quantity": 21,
+    "name": "Ortega Preston",
+    "description": "Odds are that you’ve either seen this bike or one that looks a lot like it.",
+    "company": "XANIDE",
+    "email": "ortegapreston@xanide.com"
+  },
+  {
+    "price": "$3,064.97",
+    "image": "https://i.ibb.co/cwPKD0D/prod02-copyright-500x350-1.png",
+    "quantity": 28,
+    "name": "Elvira Rivers",
+    "description": "The new Model E is a sturdy, elegant beach cruiser assembled and painted in the U.S.",
+    "company": "MATRIXITY",
+    "email": "elvirarivers@matrixity.com"
+  },
+  {
+    "price": "$2,913.80",
+    "image": "https://i.ibb.co/Yj2t951/prod03-copyright-500x350.png",
+    "quantity": 26,
+    "name": "Sheppard Riley",
+    "description": "It took some time, but one of the most well known bike brands has embraced the fastest-growing bike category: e-bikes.",
+    "company": "DEMINIMUM",
+    "email": "sheppardriley@deminimum.com"
+  },
+  {
+    "price": "$1,159.16",
+    "image": "https://i.ibb.co/qrs9Cks/prod05-copyright-500x350.png",
+    "quantity": 20,
+    "name": "Smith Stewart",
+    "gender": "This affordable single-speed model from Aventon delivers simplicity and style that is tough to beat.",
+    "company": "MANUFACT",
+    "email": "smithstewart@manufact.com"
+  },
+  {
+    "price": "$3,800.15",
+    "image": "https://i.ibb.co/xj3Wjbz/prod08-copyright-500x350.png",
+    "quantity": 21,
+    "name": "Garner Schmidt",
+    "description": "There’s a lot to like about the Roadster. It’s discreet, lightweight, and makes getting around a big city or small town a breeze.",
+    "company": "DRAGBOT",
+    "email": "garnerschmidt@dragbot.com"
+  },
+  {
+    "price": "$2,402.38",
+    "image": "https://i.ibb.co/fX9WDcL/prod09-copyright-500x350-1.png",
+    "quantity": 23,
+    "name": "Joy Alston",
+    "description": "This RadMini hits the trifecta of weird but lovable bike niches: It’s an electric folding fat bike.",
+    "company": "ISOLOGIX",
+    "email": "joyalston@isologix.com"
+  },
+  {
+    "price": "$3,564.25",
+    "image": "https://i.ibb.co/6XFpqcn/prod10-copyright-500x350.png",
+    "quantity": 31,
+    "name": "Oconnor Cline",
+    "description": "Drop below the $1,000 price level and e-bikes start to get sketchy. Most use lithium-ion battery technology",
+    "company": "VIRXO",
+    "email": "oconnorcline@virxo.com"
+  },
+  {
+    "price": "$3,926.99",
+    "image": "https://i.ibb.co/Yj2t951/prod03-copyright-500x350.png",
+    "quantity": 34,
+    "name": "Newton Parsons",
+    "description": "One of the most affordable e-bikes right now is RadPower’s RadMission 1, a city bike with commuter potential",
+    "company": "INSURON",
+    "email": "newtonparsons@insuron.com"
+  },
+  {
+    "price": "$3,277.04",
+    "image": "https://i.ibb.co/cwPKD0D/prod02-copyright-500x350-1.png",
+    "quantity": 32,
+    "name": "Brennan Clemons",
+    "description": "Aventon’s Level is a nearly fully loaded, Class 3 commuter that helps you get the most out of the e-bike experience for less.",
+    "company": "FUELWORKS",
+    "email": "brennanclemons@fuelworks.com"
+  },
+  {
+    "price": "$2,943.52",
+    "image": "https://i.ibb.co/qrs9Cks/prod05-copyright-500x350.png",
+    "quantity": 37,
+    "name": "Franks Beck",
+    "description": "Our team of experienced testers spent many hours and miles using most these bikes for their intended purposes.",
+    "company": "PLEXIA",
+    "email": "franksbeck@plexia.com"
+  },
+  {
+    "price": "$1,448.85",
+    "image": "https://i.ibb.co/xj3Wjbz/prod08-copyright-500x350.png",
+    "quantity": 32,
+    "name": "Eloise Duffy",
+    "description": "Usually, the cheaper the bike, the cheaper the parts. But this doesn’t necessarily mean you’ll be riding around on a rattling tin can.",
+    "company": "SENMAO",
+    "email": "eloiseduffy@senmao.com"
+  },
+  {
+    "price": "$2,092.61",
+    "image": "https://i.ibb.co/fX9WDcL/prod09-copyright-500x350-1.png",
+    "quantity": 35,
+    "name": "Taylor Hinton",
+    "description": "Usually, the cheaper the bike, the cheaper the parts. But this doesn’t necessarily mean you’ll be riding around on a rattling tin can.",
+    "company": "XYQAG",
+    "email": "taylorhinton@xyqag.com"
+  }
+]

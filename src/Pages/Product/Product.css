@@ -1,0 +1,19 @@
+.product img{
+    width: 100%;
+}
+.productManageBtn{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #1b3e41;
+    color: white;
+    padding: 15px;
+    transition: 0.50s ease;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.productManageBtn:hover{
+    
+    background-color: #df453e;
+    
+}
