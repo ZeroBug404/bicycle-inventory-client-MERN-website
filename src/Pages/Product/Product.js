@@ -1,10 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Product.css'
 
 const Product = ({product}) => {
     const {id, name, image, price, quantity, company, description} = product;
+    const navigate = useNavigate();
+    const location = useLocation();
+
     
+    
+    // const handleManage = () => {
+        
+    // }
 
     return (
         <div className='product'>
@@ -16,7 +24,8 @@ const Product = ({product}) => {
                     <p>Available: {quantity}</p>
                     <p>Company: {company}</p>
                     <p>{description}</p>
-                    <button className='productManageBtn'>Manage</button>
+                    {/* <button onClick={handleManage} className='productManageBtn'>Manage</button> */}
+                    <Link className='productManageBtn' to={'/warehouse'}>Manage</Link>
                 </div>
             </div>
         </div>

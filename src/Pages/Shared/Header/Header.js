@@ -17,13 +17,13 @@ const Header = () => {
   return (
     <Navbar sticky="top" style={{backgroundColor: 'rgb(21 39 41)'}} collapseOnSelect expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand className="header-logo" href="#home">
+        <Navbar.Brand className="header-logo" as={Link} to="/home">
           <img src={logo} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto navbar-links">
-            <Nav.Link href="#features">Home</Nav.Link>
+            <Nav.Link as={Link} to="/home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>

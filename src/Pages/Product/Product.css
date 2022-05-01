@@ -11,9 +11,12 @@
     transition: 0.50s ease;
     font-weight: bold;
     border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
 }
 .productManageBtn:hover{
     
     background-color: #df453e;
+    color: rgb(61, 54, 54);
     
 }
