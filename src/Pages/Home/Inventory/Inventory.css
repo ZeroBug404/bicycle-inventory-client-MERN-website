@@ -3,3 +3,20 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 }
+
+.manageInventory{
+    display: inline;
+    border: none;
+    border-radius: 2px;
+    background: #df453e;
+    padding: 20px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    margin: 50px 50px;
+}
+
+.manageInventory:hover{
+    background: #1b3e41;
+}

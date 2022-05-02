@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <footer>
+        <footer className=''>
             <p className='fw-bold text-center'> Copyright© {year} - All rights reserved</p>
             <div></div>
         </footer>
