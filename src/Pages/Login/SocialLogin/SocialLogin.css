@@ -1,0 +1,9 @@
+.googleSignIn{
+    background-color: #cccccc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.googleSignIn:hover{
+    background-color: #b3b3b3;
+}

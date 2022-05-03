@@ -1,11 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Warehouse.css";
 
 const Warehouse = () => {
   const [products, setProducts] = useState([]);
-
+  const navigate = useNavigate()
   
   useEffect(() => {
     axios
@@ -29,6 +30,10 @@ const Warehouse = () => {
         }
       });
   };
+
+  const handleAddItem = () => {
+      navigate('/addnewitem');
+  }
 
 
   return (
@@ -62,6 +67,7 @@ const Warehouse = () => {
             ))}
           </tbody>
         </Table>
+        <button onClick={handleAddItem} className="addNewIten-btn">Add new item</button>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -52,6 +53,16 @@ const Login = () => {
             <br />
         </form>
         <p>Don't have an account? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
+
+        <div className="or-section">
+          <div></div>
+          <p>or</p>
+          <div></div>
+        </div>
+
+        <div>
+          <SocialLogin></SocialLogin>
+        </div>
     </div>
     );
 };
