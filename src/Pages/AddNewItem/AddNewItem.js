@@ -7,7 +7,7 @@ const AddNewItem = () => {
 
   return (
     <div className="container text-center">
-        <h1 style={{color: '#1b3e41'}} className="my-5">Add New Item</h1>
+        <h1 style={{color: '#1b3e41', fontSize: '50px'}} className="mb-5 fw-bold">Add New Item</h1>
       <form className="m-auto" onSubmit={handleSubmit(onSubmit)}>
         <input {...register("firstName", { required: true, maxLength: 20 })} placeholder='first name' required/>
         <br />
@@ -21,7 +21,10 @@ const AddNewItem = () => {
         <input type="number" {...register("age", { min: 5, max: 99 })} placeholder='quantity' required/>
         <br />
         <br />
-        <input type="submit" />
+        <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
+        <br />
+        <br />
+        <input className="fw-bold" type="submit" value="Add New Item"/>
         <br />
         <br />
       </form>

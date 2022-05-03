@@ -1,4 +1,8 @@
-footer{
-    color: whitesmoke;
-    background-color: #1b3e41;
+footer {
+  color: whitesmoke;
+  background-color: #1b3e41;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
