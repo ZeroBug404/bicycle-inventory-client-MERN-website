@@ -6,7 +6,7 @@ const ProductDetail = () => {
     const [detail, setDetail] = useState({})
 
     useEffect(() => {
-        const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+        const url = `http://localhost:5000/products/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setDetail(data))
@@ -14,7 +14,7 @@ const ProductDetail = () => {
 
     return (
         <div>
-            <h1>This is product detail{detail.name}</h1>
+            <h1>This is product detail: {detail.name}</h1>
         </div>
     );
 };

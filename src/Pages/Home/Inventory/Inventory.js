@@ -10,7 +10,7 @@ const Inventory = () => {
 
   useEffect(() => {
     axios
-      .get("https://polar-oasis-43531.herokuapp.com/products")
+      .get("http://localhost:5000/products")
       .then((response) => {
         const res = response.data;
         const sliced = res.slice(0, 6);
@@ -37,6 +37,7 @@ const Inventory = () => {
             <Product key={product._id} product={product}></Product>
           ))}
         </div>
+
       {/* <Link className="manageInventory" to={'/warehouse'}>Manage Inventory</Link> */}
       <button onClick={handleManageInventory} className="manageInventory">Manage Inventory</button>
       </div>
