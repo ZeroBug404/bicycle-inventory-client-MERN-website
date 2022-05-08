@@ -41,7 +41,7 @@ const AddNewItem = () => {
         <br />
         <input
           {...register("email", { required: true, maxLength: 40 })}
-          placeholder="USer email"
+          placeholder={user.email}
           required
           // readOnly
           // disabled
