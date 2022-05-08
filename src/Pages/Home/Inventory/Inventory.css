@@ -20,3 +20,9 @@
 .manageInventory:hover{
     background: #1b3e41;
 }
+
+@media only screen and (max-width: 1200px){
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

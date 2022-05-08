@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import './Register.css';
 import auth from '../../../firebase.init';
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -14,7 +14,10 @@ const Register = () => {
     user,
     loading,
     error,
-  ] = useCreateUserWithEmailAndPassword(auth);
+  ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+
+  const [sendEmailVerification, sending, error2] = useSendEmailVerification(auth);
+
     const navigate = useNavigate();
     
     const onSubmit = data => console.log(data);
@@ -26,6 +29,8 @@ const Register = () => {
       const password = e.target.password.value;
 
       createUserWithEmailAndPassword(email, password)
+
+      
   }
 
   if (user) {

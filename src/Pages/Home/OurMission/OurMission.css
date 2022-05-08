@@ -1,13 +1,24 @@
-.ourMission-btn{
-    border: none;
-    border-radius: 2px;
-    background: #df453e;
-    padding: 25px 50px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.5s ease;
+.ourMission-btn {
+  border: none;
+  border-radius: 2px;
+  background: #df453e;
+  padding: 25px 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.5s ease;
 }
-.ourMission-btn:hover{
-    background: #1b3e41;
+.ourMission-btn:hover {
+  background: #1b3e41;
+}
+
+@media only screen and (max-width: 576px) {
+  .mission-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    text-align: center;
+  }
+  .cycling-img {
+    margin-right: 40px;
+  }
 }
