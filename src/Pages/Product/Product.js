@@ -1,27 +1,27 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import React from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Product.css";
 
 const Product = ({ product }) => {
   const { _id, name, image, price, quantity, company, description } = product;
-  
+
   const navigate = useNavigate();
   const location = useLocation();
 
-    const handleManage = (id) => {
-        navigate(`/products/${id}`)
-    }
+  const handleManage = (id) => {
+    navigate(`/products/${id}`);
+  };
 
-//   const handleManage = (id) => {
-//     const url = `http://localhost:5000/products/${id}`;
-//     // console.log(url);
-//     // axios.get(url)
-//     // .then(function (response) {
-//     //   // handle success
-//     //   console.log(response);
-//     // });
-//   };
+  //   const handleManage = (id) => {
+  //     const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+  //     // console.log(url);
+  //     // axios.get(url)
+  //     // .then(function (response) {
+  //     //   // handle success
+  //     //   console.log(response);
+  //     // });
+  //   };
 
   return (
     <div className="product">

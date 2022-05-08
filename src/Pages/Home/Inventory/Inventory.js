@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Product from "../../Product/Product";
 import "./Inventory.css";
 
@@ -10,7 +10,7 @@ const Inventory = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get("https://polar-oasis-43531.herokuapp.com/products")
       .then((response) => {
         const res = response.data;
         const sliced = res.slice(0, 6);
@@ -18,10 +18,9 @@ const Inventory = () => {
       });
   }, []);
 
-
   const handleManageInventory = () => {
-      navigate('/warehouse')
-  }
+    navigate("/warehouse");
+  };
 
   return (
     <div style={{ backgroundColor: "#f0f2f2" }}>
@@ -38,8 +37,10 @@ const Inventory = () => {
           ))}
         </div>
 
-      {/* <Link className="manageInventory" to={'/warehouse'}>Manage Inventory</Link> */}
-      <button onClick={handleManageInventory} className="manageInventory">Manage Inventory</button>
+        {/* <Link className="manageInventory" to={'/warehouse'}>Manage Inventory</Link> */}
+        <button onClick={handleManageInventory} className="manageInventory">
+          Manage Inventory
+        </button>
       </div>
     </div>
   );

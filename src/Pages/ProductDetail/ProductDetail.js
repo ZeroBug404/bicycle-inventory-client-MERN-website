@@ -1,14 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./ProductDetail.css";
 
 const ProductDetail = () => {
   const { id } = useParams();
   const [detail, setDetail] = useState({});
   const stockRef = useRef(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const url = `http://localhost:5000/products/${id}`;
+    const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -22,22 +23,21 @@ const ProductDetail = () => {
     const newQuantity = detail.quantity - 1;
     // const newQuantity = parseInt(quantity)
     console.log(newQuantity);
-    if(newQuantity > 0) {
-      const url = `http://localhost:5000/products/${id}`;
-    fetch(url, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ newQuantity }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-      });
-    }
-    else{
-      alert('Out of stock')
+    if (newQuantity > 0) {
+      const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+      fetch(url, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ newQuantity }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+        });
+    } else {
+      alert("Out of stock");
     }
   };
 
@@ -50,7 +50,7 @@ const ProductDetail = () => {
   //     const newStockedQuantity = detail.quantity + parseInt(itemNumber);
   //     console.log(newStockedQuantity);
 
-  //     const url = `http://localhost:5000/products/${id}`;
+  //     const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
   //     fetch(url, {
   //       method: "PUT",
   //       headers: {
@@ -64,6 +64,10 @@ const ProductDetail = () => {
   //       });
   //   }
   // };
+
+  const handleManageInventory = () => {
+    navigate("/warehouse");
+  };
 
   return (
     <div className="container">
@@ -103,6 +107,11 @@ const ProductDetail = () => {
             </button> */}
           </div>
         </div>
+      </div>
+      <div className="text-center">
+        <button onClick={handleManageInventory} className="manageInventory">
+            Manage Inventory
+        </button>
       </div>
     </div>
   );

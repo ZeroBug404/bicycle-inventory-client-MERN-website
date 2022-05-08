@@ -6,35 +6,34 @@ import "./Warehouse.css";
 
 const Warehouse = () => {
   const [products, setProducts] = useState([]);
-  const navigate = useNavigate()
-  
+  const navigate = useNavigate();
+
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get("https://polar-oasis-43531.herokuapp.com/products")
       .then((response) => {
         setProducts(response.data);
       });
   }, []);
 
   const handleDelete = (id) => {
-    const procced = window.confirm('Are you sure?');
-    const url = `http://localhost:5000/products/${id}`
+    const procced = window.confirm("Are you sure?");
+    const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
     fetch(url, {
       method: "DELETE",
     })
       .then((res) => res.json())
       .then((data) => {
         if (procced) {
-           const remaining = products.filter(product => product._id !== id)
-           setProducts(remaining);
+          const remaining = products.filter((product) => product._id !== id);
+          setProducts(remaining);
         }
       });
   };
 
   const handleAddItem = () => {
-      navigate('/addnewitem');
-  }
-
+    navigate("/addnewitem");
+  };
 
   return (
     <div>
@@ -60,14 +59,19 @@ const Warehouse = () => {
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.company}</td>
-                <button onClick={() => handleDelete(product._id)} className="my-1 delete-btn btn">
+                <button
+                  onClick={() => handleDelete(product._id)}
+                  className="my-1 delete-btn btn"
+                >
                   Delete
                 </button>
               </tr>
             ))}
           </tbody>
         </Table>
-        <button onClick={handleAddItem} className="addNewIten-btn">Add new item</button>
+        <button onClick={handleAddItem} className="addNewIten-btn">
+          Add new item
+        </button>
       </div>
     </div>
   );

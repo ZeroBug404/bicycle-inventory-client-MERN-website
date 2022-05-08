@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
-import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from "../../firebase.init";
 
 const AddNewItem = () => {
@@ -10,7 +10,7 @@ const AddNewItem = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    fetch("http://localhost:5000/products", {
+    fetch("https://polar-oasis-43531.herokuapp.com/products", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -34,14 +34,14 @@ const AddNewItem = () => {
       <form className="m-auto" onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("name", { required: true, maxLength: 20 })}
-          placeholder='item name'
+          placeholder="item name"
           required
         />
         <br />
         <br />
         <input
           {...register("email", { required: true, maxLength: 40 })}
-          placeholder='USer email'
+          placeholder="USer email"
           required
           // readOnly
           // disabled
