@@ -52,3 +52,27 @@
 .banner-btn-2:hover{
     background-color: #1b3e41;
 }
+
+
+@media only screen and (max-width: 576px){
+    /* .bannerimage {
+        width: 100%;
+
+    } */
+    .banner-btn{
+        top: 250px;
+        left: 75px;
+    }
+    .banner-btn button{
+        width: 80%;
+        font-size: 18px;
+    }
+    .banner-title{
+        color: whitesmoke;
+        font-size: 45px;
+        font-weight: bold;
+        position: absolute;
+        top: 100px;
+        left: 25px;
+    }
+}

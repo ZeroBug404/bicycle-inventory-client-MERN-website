@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from "../../firebase.init";
 
 const AddNewItem = () => {
-  const { register, handleSubmit } = useForm();
+  const [user] = useAuthState(auth);
+
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
 
@@ -30,15 +34,17 @@ const AddNewItem = () => {
       <form className="m-auto" onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("name", { required: true, maxLength: 20 })}
-          placeholder="Your name"
+          placeholder='item name'
           required
         />
         <br />
         <br />
         <input
           {...register("email", { required: true, maxLength: 40 })}
-          placeholder="email"
+          placeholder='USer email'
           required
+          // readOnly
+          // disabled
         />
         <br />
         <br />

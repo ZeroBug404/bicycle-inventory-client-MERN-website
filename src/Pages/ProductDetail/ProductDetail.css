@@ -1,0 +1,40 @@
+.deliver-btn {
+  display: inline;
+  border: none;
+  border-radius: 2px;
+  background: #df453e;
+  padding: 18px 70px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.5s ease;
+  margin-top: 10px;
+}
+
+.deliver-btn:hover {
+  background: #1b3e41;
+}
+
+.restock-input {
+  width: 301px;
+  padding: 16px 18px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.restock-btn {
+  display: inline;
+  border: none;
+  border-radius: 2px;
+  background: #1b3e41;
+  padding: 18px 70px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.5s ease;
+  margin-top: 10px;
+}
+
+.restock-btn:hover {
+  background: #df453e;
+}
