@@ -38,3 +38,13 @@
 .restock-btn:hover {
   background: #df453e;
 }
+
+@media only screen and (max-width: 576px){
+  .product-info{
+    flex-direction: column;
+  }
+  .product-img{
+    width: 100%;
+  }
+  
+}

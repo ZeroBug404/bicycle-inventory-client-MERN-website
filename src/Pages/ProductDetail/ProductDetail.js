@@ -77,9 +77,9 @@ const ProductDetail = () => {
       >
         {detail.name}
       </h1>
-      <div className="d-flex justify-content-center align-item-center">
-        <div>
-          <img src={detail.image} alt="" />
+      <div className="d-flex justify-content-center align-item-center product-info">
+        <div className="">
+          <img className="product-img" src={detail.image} alt="" />
         </div>
         <div className="p-4">
           <h2 style={{ fontSize: "45px" }}>{detail.price}</h2>
