@@ -13,17 +13,16 @@ const MyItem = () => {
     const getMyItems = async () => {
       const email = user?.email;
       console.log(email);
-      const url = `https://polar-oasis-43531.herokuapp.com/items?email=${email}`;
+      const url = `https://bicycle-inventory-server.onrender.com/items?email=${email}`;
       const { data } = await axios.get(url);
       setMyItems(data);
     };
     getMyItems();
   }, [user]);
 
-
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure?");
-    const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+    const url = `https://bicycle-inventory-server.onrender.com/products/${id}`;
     fetch(url, {
       method: "DELETE",
     })
@@ -36,20 +35,19 @@ const MyItem = () => {
       });
   };
 
-
-  if(myItems){
+  if (myItems) {
     console.log(myItems);
   }
   return (
     <div>
       <div className="container">
-      <h2
+        <h2
           style={{ color: "#1b3e41", fontSize: "50px", fontWeight: "bold" }}
           className="text-center py-5"
         >
           My Items
         </h2>
-      <Table striped bordered hover>
+        <Table striped bordered hover>
           <thead>
             <tr>
               <th>Name</th>

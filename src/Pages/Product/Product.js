@@ -14,7 +14,7 @@ const Product = ({ product }) => {
   };
 
   //   const handleManage = (id) => {
-  //     const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+  //     const url = `https://bicycle-inventory-server.onrender.com/products/${id}`;
   //     // console.log(url);
   //     // axios.get(url)
   //     // .then(function (response) {

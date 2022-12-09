@@ -10,7 +10,7 @@ const Warehouse = () => {
 
   useEffect(() => {
     axios
-      .get("https://polar-oasis-43531.herokuapp.com/products")
+      .get("https://bicycle-inventory-server.onrender.com/products")
       .then((response) => {
         setProducts(response.data);
       });
@@ -18,7 +18,7 @@ const Warehouse = () => {
 
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure?");
-    const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+    const url = `https://bicycle-inventory-server.onrender.com/products/${id}`;
     fetch(url, {
       method: "DELETE",
     })

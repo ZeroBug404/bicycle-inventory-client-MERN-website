@@ -10,7 +10,7 @@ const AddNewItem = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    fetch("https://polar-oasis-43531.herokuapp.com/products", {
+    fetch("https://bicycle-inventory-server.onrender.com/products", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",

@@ -9,7 +9,7 @@ const ProductDetail = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+    const url = `https://bicycle-inventory-server.onrender.com/products/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -24,7 +24,7 @@ const ProductDetail = () => {
     // const newQuantity = parseInt(quantity)
     console.log(newQuantity);
     if (newQuantity > 0) {
-      const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+      const url = `https://bicycle-inventory-server.onrender.com/products/${id}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -50,7 +50,7 @@ const ProductDetail = () => {
   //     const newStockedQuantity = detail.quantity + parseInt(itemNumber);
   //     console.log(newStockedQuantity);
 
-  //     const url = `https://polar-oasis-43531.herokuapp.com/products/${id}`;
+  //     const url = `https://bicycle-inventory-server.onrender.com/products/${id}`;
   //     fetch(url, {
   //       method: "PUT",
   //       headers: {
@@ -110,7 +110,7 @@ const ProductDetail = () => {
       </div>
       <div className="text-center">
         <button onClick={handleManageInventory} className="manageInventory">
-            Manage Inventory
+          Manage Inventory
         </button>
       </div>
     </div>

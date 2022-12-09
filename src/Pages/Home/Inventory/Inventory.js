@@ -10,7 +10,7 @@ const Inventory = () => {
 
   useEffect(() => {
     axios
-      .get("https://polar-oasis-43531.herokuapp.com/products")
+      .get("https://bicycle-inventory-server.onrender.com/products")
       .then((response) => {
         const res = response.data;
         const sliced = res.slice(0, 6);
